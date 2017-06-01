@@ -7,7 +7,8 @@ body {
 .header {
   width: 100%;
   height: 10vh;
-  margin-top: 2vw;
+  margin-top: 2vh;
+  margin-left: 2vw;
   display: block;
 }
 
@@ -29,12 +30,13 @@ body {
 .header form input {
   font-size: 3vh;
   width: 100%;
-  height: 100%;
+  height: 4vh;
 }
 
 .container {
   align-content: center;
   width: 100%;
+  overflow: hidden; 
   margin-right: 2vw;
   margin-left: 2vw;
   margin-top: 2vh;
@@ -48,5 +50,45 @@ body {
   margin-right: 2vw;
   margin-left: 2vw;
   margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.new {
+  width: 60vw;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+.new h1 {
+  font-size: 4vh;
+  padding: 0 0 0 0;
+  margin-left: 2vw;
+}
+
+.new form input[type=text] {
+  float: left;
+  width: 20vw;
+  height: 2vh;
+  padding-left: 1vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.new form input[type=submit] {
+  float: left;
+  width: 15vw;
+  height: 4vh;
+  font-size: 3vh;
+  padding-left: 1vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background: #0000ff;
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
 }
 
