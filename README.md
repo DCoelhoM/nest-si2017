@@ -7,10 +7,14 @@ Instructions
   * Ruby on Rails 5.1.0
 
 * Installation
+  * `$cd challenge_2/`
   * `$ bundle install`
 
 * Database creation
   * `$ rails db:migrate`
+
+* Populate database
+  * `$ rake db:seed`
 
 * Start application
   * `$ rails server`
