@@ -67,6 +67,21 @@ body {
   margin-bottom: 2vh;
 }
 
+.container .person .photo img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.container .person .photo {
+  float: left;
+  width: 5vw;
+  height: 5vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
 .container .photo {
   float: left;
   width: 20vw;

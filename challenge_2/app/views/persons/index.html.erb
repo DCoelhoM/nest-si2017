@@ -14,7 +14,11 @@
 
     <div class="container">
       <% @persons.each do |p| %>
+        
         <div class="person">
+          <div class="photo">
+            <img src="<%= p.photo %>">
+          </div>
           <span class="name"><%= p.name %></span><br>
           <span class="company"><%= p.company %></span><br>
           <span class="email"><a href="mailto:<%= p.email %>"><%= p.email %></a></span><br>
