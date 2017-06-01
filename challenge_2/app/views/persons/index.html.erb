@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Directory</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="header">
-      <h1>Directory</h1> 
+      <h1><%= link_to 'Directory', '/' %></h1>
+      <%= form_for("/", method: "get") do %>
+        <%= text_field_tag(:search) %>
+      <% end %>
     </div>
 
     <div class="container">

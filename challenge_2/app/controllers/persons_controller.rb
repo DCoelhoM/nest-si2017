@@ -1,6 +1,10 @@
 class PersonsController < ApplicationController
   def index
-    @persons = Person.all
+    if params[:search]
+      @persons = Person.where("name LIKE ?", "%#{params[:search]}%")
+    else
+      @persons = Person.all
+    end
     @person = Person.new
   end
 
