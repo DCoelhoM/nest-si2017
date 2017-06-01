@@ -20,19 +20,21 @@
           <span class="company"><%= person.company %></span><br>
           <span class="email"><a href="mailto:<%= person.email %>"><%= person.email %></a></span><br>
           <span class="phone"><%= person.phone %></span><br>
+          <%= link_to "More Info", person_path(person) %>
         </div>
       <% end %>
     </div>
 
     <div class="new">
       <h1>New Person</h1>
-      <form>
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="company" placeholder="Company">
-        <input type="text" name="email" placeholder="Email">
-        <input type="text" name="phone" placeholder="Phone">
-        <input type="submit" value="Submit">
-      </form>
+      <%= form_for :person, url: persons_path do |f| %>
+        <%= f.text_field :name, placeholder:"Name" %>
+        <%= f.text_field :company, placeholder:"Company" %>
+        <%= f.text_field :email, placeholder:"Email" %>
+        <%= f.text_field :phone, placeholder:"Phone" %>
+        <%= f.text_field :photo, placeholder:"Photo" %>
+        <%= f.submit %>
+      <% end %>
     </div>
   </body>
 </html>
