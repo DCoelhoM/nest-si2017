@@ -114,6 +114,18 @@ body {
   margin-left: 2vw;
 }
 
+.new #error_explanation {
+  margin-left: 2vw;
+}
+
+.new #error_explanation h2 {
+  font-size: 2.5vh;
+}
+
+.new #error_explanation ul {
+  font-size: 1.5vh;
+}
+
 .new h1 {
   font-size: 4vh;
   padding: 0 0 0 0;
