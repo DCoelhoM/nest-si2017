@@ -5,32 +5,40 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 90%;
   height: 10vh;
   margin-top: 2vh;
   margin-left: 2vw;
-  display: block;
 }
 
 .header h1 {
+  height: 100%;
+  width: 50vw;
   font-size: 4vh;
   padding: 0 0 0 0;
   margin-left: 2vw;
-  float: left;
+  display: inline-block;
 }
 
 .header form {
-  width: 40vw;
-  height: 4vh;
+  width: 30vw;
+  height: 100%;
   padding: 0 0 0 0;
   margin-right: 2vw;
-  float: right;
+  display: inline-block;
 }
 
 .header form input {
-  font-size: 3vh;
   width: 100%;
   height: 4vh;
+  padding-left: 2vw;
+  background-image: url('https://www.w3schools.com/howto/searchicon.png');
+  background-position: 1vh 1vh;
+  background-size: 2vh 2vh;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -68,12 +76,15 @@ body {
 .new form input[type=text] {
   float: left;
   width: 20vw;
-  height: 2vh;
+  height: 4vh;
   padding-left: 1vw;
   margin-right: 2vw;
   margin-left: 2vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .new form input[type=submit] {
@@ -86,9 +97,13 @@ body {
   margin-left: 2vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
-  background: #0000ff;
-  border: 0 none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; 
+  background: #41B9E1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+.new form input[type=submit]:hover {
+  background: #3494b4;
+}
