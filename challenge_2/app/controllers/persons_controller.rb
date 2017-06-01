@@ -1,13 +1,19 @@
 class PersonsController < ApplicationController
   def index
     @persons = Person.all
+    @person = Person.new
   end
 
   def show
     @person = Person.find(params[:id])
   end
 
+  def new
+    @person = Person.new
+  end
+
   def create
+    @persons = Person.all
     @person = Person.new(params.require(:person).permit(:name, :company, :email, :phone, :photo))
     if @person.save
       redirect_to @person

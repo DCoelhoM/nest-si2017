@@ -8,19 +8,16 @@
   <body>
     <div class="header">
       <h1>Directory</h1> 
-      <form>
-        <input type="text" name="search" placeholder="Search">
-      </form>
     </div>
 
     <div class="container">
-      <% @persons.each do |person| %>
+      <% @persons.each do |p| %>
         <div class="person">
-          <span class="name"><%= person.name %></span><br>
-          <span class="company"><%= person.company %></span><br>
-          <span class="email"><a href="mailto:<%= person.email %>"><%= person.email %></a></span><br>
-          <span class="phone"><%= person.phone %></span><br>
-          <%= link_to "More Info", person_path(person) %>
+          <span class="name"><%= p.name %></span><br>
+          <span class="company"><%= p.company %></span><br>
+          <span class="email"><a href="mailto:<%= p.email %>"><%= p.email %></a></span><br>
+          <span class="phone"><%= p.phone %></span><br>
+          <%= link_to "More Info", person_path(p) %>
         </div>
       <% end %>
     </div>
@@ -28,6 +25,18 @@
     <div class="new">
       <h1>New Person</h1>
       <%= form_for :person, url: persons_path do |f| %>
+        <% if @person.errors.any? %>
+          <div id="error_explanation">
+            <h2>
+              <%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:
+            </h2>
+            <ul>
+              <% @person.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
         <%= f.text_field :name, placeholder:"Name" %>
         <%= f.text_field :company, placeholder:"Company" %>
         <%= f.text_field :email, placeholder:"Email" %>
