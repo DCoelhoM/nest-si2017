@@ -1,0 +1,33 @@
+body {
+  background: #FFFFFF;
+  margin: 0 0 0 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  margin-top: 2vw;
+  display: block;
+}
+
+.header h1 {
+  font-size: 3vh;
+  padding: 0 0 0 0;
+  margin-left: 2vw;
+  float: left;
+}
+
+.header form {
+  width: 40vw;
+  height: 3vh;
+  padding: 0 0 0 0;
+  margin-right: 2vw;
+  float: right;
+}
+
+.header form input {
+  font-size: 2vh;
+  width: 100%;
+  height: 100%;
+}
+
