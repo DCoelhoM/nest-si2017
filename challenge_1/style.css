@@ -6,12 +6,13 @@ body {
 
 .header {
   width: 100%;
+  height: 10vh;
   margin-top: 2vw;
   display: block;
 }
 
 .header h1 {
-  font-size: 3vh;
+  font-size: 4vh;
   padding: 0 0 0 0;
   margin-left: 2vw;
   float: left;
@@ -19,15 +20,33 @@ body {
 
 .header form {
   width: 40vw;
-  height: 3vh;
+  height: 4vh;
   padding: 0 0 0 0;
   margin-right: 2vw;
   float: right;
 }
 
 .header form input {
-  font-size: 2vh;
+  font-size: 3vh;
   width: 100%;
   height: 100%;
+}
+
+.container {
+  align-content: center;
+  width: 100%;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.container .person {
+  float: left;
+  outline: 1px solid;
+  width: 25vw;
+  padding-left: 1vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
 }
 
