@@ -3,17 +3,17 @@
 Instructions
 ============
 * Dependencies
-* Ruby 2.4.0p0
-* Ruby on Rails 5.1.0
+ * Ruby 2.4.0p0
+ * Ruby on Rails 5.1.0
 
 * Installation
-* `$ bundle install`
+ * `$ bundle install`
 
 * Database creation
-* `$ rails db:migrate`
+ * `$ rails db:migrate`
 
 * Start application
-* `$ rails server`
+ * `$ rails server`
 
 
 
